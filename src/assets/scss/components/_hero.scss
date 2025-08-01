@@ -15,11 +15,23 @@
       height: 100%;
       background-color: #fff;
       clip-path: polygon(0 0, 100% 0, 0 112%, 0 100%);
-      z-index: 1;
+      z-index: 2;
     }
   }
   .visual-wrap {
+    position: relative;
     overflow: hidden;
+    padding: 2rem 0;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.05);
+      z-index: 1;
+    }
   }
 }
 
