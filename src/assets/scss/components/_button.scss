@@ -1,0 +1,53 @@
+@use "@scss/abstract/index";
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 1.0625rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  transition:
+    background-color 0.25s ease-out,
+    color 0.25s ease-out;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  &--hero {
+    position: relative;
+    border: 2px solid #000;
+    color: #000;
+    text-transform: uppercase;
+    padding-right: 2rem;
+    &:before {
+      content: "❯";
+      position: absolute;
+      right: 1rem;
+      color: #000;
+      opacity: 0.7;
+    }
+    &:hover {
+      background-color: #aa272f;
+      color: #fff;
+      border: 2px solid #aa272f;
+      &:before {
+        color: #fff;
+        opacity: 0.7;
+      }
+    }
+  }
+  &--startcontact {
+    position: relative;
+    background-color: #aa272f;
+    border: 2px solid #aa272f;
+    color: #fff;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #881e26;
+      border-color: #881e26;
+      color: #fff;
+    }
+  }
+}

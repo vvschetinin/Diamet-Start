@@ -1,0 +1,49 @@
+@use "@scss/abstract/index";
+
+.hero {
+  height: auto;
+  overflow: hidden;
+  min-height: 100px;
+  background-color: azure;
+}
+
+.masthead-title {
+  padding: 1rem 0;
+  .button-wrap {
+    margin-top: 2.5rem;
+  }
+  .subtitle {
+    margin-top: 2rem;
+    font-size: 34px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #aa272f;
+    span {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 0.5rem;
+      font-size: 22px;
+      font-weight: 300;
+      text-transform: none;
+      color: #000;
+    }
+  }
+}
+
+.masthead-imgwrap {
+  min-height: 80vh;
+  position: relative;
+  padding-top: 72%;
+  margin-right: calc(-5.64516% - 15px);
+  margin-top: 2px;
+  margin-bottom: 2px;
+  .item-present {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+  }
+}
