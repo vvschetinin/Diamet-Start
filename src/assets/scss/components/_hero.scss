@@ -50,6 +50,9 @@
   margin-right: calc(-5.64516% - 15px);
   margin-top: 2px;
   margin-bottom: 2px;
+  @include index.minMedia(1400px) {
+    min-height: calc(100vh - 120px);
+  }
   .item-present {
     position: absolute;
     top: 0;
